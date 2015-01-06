@@ -1,0 +1,45 @@
+.di-issue-even, .di-break-colored, .di-grid-title, .di-grid-break {
+	background-color: AliceBlue;
+}
+
+.di-break-colored {
+	min-height: 20px;
+}
+
+.di-title, .di-title-break {
+	background-color: LightSlateGray;
+	color: White;
+}
+
+.di-title-break {
+	min-height: 5px;
+}
+
+.di-grid-break {
+	min-height: 5px;
+}
+
+.di-arg {
+	background-color: #FFFFFF;
+}
+
+.di-arg:hover {
+	background-color: LightGray;
+}
+
+.panel-heading:hover {
+	background-color: LightGray;
+}
+
+.di-unselected {
+	color: WhiteSmoke;
+}
+
+.di-unselected-arg {
+	color: #FFFFFF;
+}
+
+/*
+#EC5D57 / Tomato / Coral / Salmon, SeaShell
+LightSlateGray, AliceBlue / Ivory
+*/

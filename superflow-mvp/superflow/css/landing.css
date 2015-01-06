@@ -1,0 +1,26 @@
+html,body
+{
+    height: 100%;
+}
+body
+{
+   display: table; 
+   margin: 0 auto;
+}
+
+.di-outer-container
+{  
+	background-image: url('../img/bgi-bw.jpg');
+	background-size: cover;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%; 
+}
+.di-cent-container
+{
+    position: relative;
+    top: 30%;
+    color: white;   
+}
