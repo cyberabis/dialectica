@@ -39,6 +39,15 @@
 	color: #FFFFFF;
 }
 
+.di-logo:hover, .di-logo:visited, .di-logo:link, .di-logo:active {
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+.di-title-text {
+	color: #FFFFFF;
+}
+
 /*
 #EC5D57 / Tomato / Coral / Salmon, SeaShell
 LightSlateGray, AliceBlue / Ivory
