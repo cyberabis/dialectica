@@ -17,7 +17,7 @@
 		<br/>
 		<div class="row di-toolbox">
 			<div class="col-xs-3 di-create">
-				<a class="btn btn-success" href="#" role="button">Create</a>
+				<a class="btn btn-success" href="#" role="button" data-toggle="modal" data-target="#myModal">Create new Issue / Argument</a>
 			</div>
 			<div class="col-xs-3 di-respond">
 				Respond
@@ -30,6 +30,7 @@
 			<div class="col-xs-3 di-edit">
 				<a class="btn btn-primary" href="#" role="button">Edit</a>
 				<a class="btn btn-danger" href="#" role="button">Delete</a>
+				<a class="btn btn-info" href="#" role="button">Evaluate</a>
 			</div>
 		</div>
 		<br/>
@@ -177,6 +178,58 @@
 		<br/>
 	</div>
 
+	<!-- Modal -->
+	<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+	  <div class="modal-dialog">
+	    <div class="modal-content">
+	      <div class="modal-header">
+	        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+	        <h4 class="modal-title" id="myModalLabel">Create New Issue / Argument</h4>
+	      </div>
+	      <div class="modal-body">
+		      	<div class="radio">
+				  <label>
+				    <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1">
+				    Issue
+				  </label>
+				</div>
+				<div class="radio">
+				  <label>
+				    <input type="radio" name="optionsRadios" id="optionsRadios2" value="option2" checked>
+				    Argument
+				  </label>
+				</div>
+				<br/>
+				<div class="panel panel-default">
+				  <div class="panel-heading">New Argument</div>
+				  <div class="panel-body">
+				    <form>
+						<div class="form-group">
+						    <label for="tag">Tag</label>
+						    <input type="text" class="form-control" id="tag" placeholder="Enter tag">
+						</div>
+						<div class="form-group">
+						    <label for="cite">Cite</label>
+						    <input type="text" class="form-control" id="cite" placeholder="Enter Citation">
+						</div>
+						<div class="form-group">
+						    <label for="longtext">Long Text</label>
+						    <textarea class="form-control" rows="3" id="longtext"></textarea>
+						</div>
+					</form>
+				  </div>
+				</div>
+	      </div>
+	      <div class="modal-footer">
+	        <button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
+	        <button type="button" class="btn btn-primary">Create</button>
+	      </div>
+	    </div>
+	  </div>
+	</div>
+
+	<script src="jQuery/js/jquery-2.1.3.min.js"></script>
+	<script src="bootstrap3/js/bootstrap.min.js"></script>
 	<script src="jsPlumb/js/dom.jsPlumb-1.7.2-min.js "></script>
 	<script src="superflow/js/superflow.js "></script>
 </body>
