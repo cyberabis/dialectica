@@ -1,3 +1,5 @@
+//jsPlumb for drawing lines
+
 jsPlumb.ready(function() {
 
 	var jspInstance = jsPlumb.getInstance({
@@ -41,4 +43,21 @@ jsPlumb.ready(function() {
 		target:"di-arg-3-3"
 	});
 
+});
+
+//Jquery for mock UI
+
+$(document).ready(function(){
+    $('.di-arg').click(function(e){
+    	if($(this).hasClass("di-selected"))
+    		$(this).removeClass("di-selected");
+    	else 
+    		$(this).addClass("di-selected");
+    });
+    $('.panel-heading').click(function(e){
+    	if($(this).hasClass("di-iss-unselected"))
+    		$(this).removeClass("di-iss-unselected");
+    	else
+    		$(this).addClass("di-iss-unselected");
+    });
 });

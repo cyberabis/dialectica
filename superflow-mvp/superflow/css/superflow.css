@@ -1,5 +1,5 @@
 .di-issue-even, .di-break-colored, .di-grid-title, .di-grid-break {
-	background-color: AliceBlue;
+	background-color: LightGray;
 }
 
 .di-break-colored {
@@ -23,20 +23,21 @@
 	background-color: #FFFFFF;
 }
 
-.di-arg:hover {
+.di-selected {
 	background-color: LightGray;
+}
+
+.di-arg:hover {
+	/*background-color: WhiteSmoke;*/
+	border-color:LightSlateGray;
+	cursor: hand;
+	cursor: pointer;
 }
 
 .panel-heading:hover {
-	background-color: LightGray;
-}
-
-.di-unselected {
-	color: WhiteSmoke;
-}
-
-.di-unselected-arg {
-	color: #FFFFFF;
+	background-color: #FFFFFF;
+	cursor: hand;
+	cursor: pointer;
 }
 
 .di-logo:hover, .di-logo:visited, .di-logo:link, .di-logo:active {
@@ -46,6 +47,10 @@
 
 .di-title-text {
 	color: #FFFFFF;
+}
+
+.di-iss-unselected > h5 > a {
+	color: WhiteSmoke;
 }
 
 /*
